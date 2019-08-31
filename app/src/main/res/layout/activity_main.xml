@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="student details"
+        android:textSize="32dp"
+         />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter roll no"/>
+        <EditText
+            android:id="@+id/editRollno"
+            android:layout_width="150dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter name"/>
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter marks"/>
+        <EditText
+            android:id="@+id/marks"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:hint="Enter marks"/>
+
+
+</GridLayout>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow
+        android:layout_height="62dp"
+        android:gravity="center">
+<Button
+    android:id="@+id/buttonAdd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Add"/>
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete"/>
+        <Button
+            android:id="@+id/buttonModify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modify" />
+
+    </TableRow>
+    <TableRow android:gravity="center">
+        <Button
+            android:id="@+id/buttonView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View"/>
+        <Button
+            android:id="@+id/buttonViewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ViewAll"/>
+        <Button
+            android:id="@+id/buttonshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show"/>
+    </TableRow>
+</TableLayout>
+</LinearLayout>
